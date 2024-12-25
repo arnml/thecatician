@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import PrelineScript from "@/components/PrelineScript";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -20,9 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.variable} antialiased`}>
-        <Header/>        
+        <Header />
         {children}
-        <PrelineScript />
+        {/* <PrelineScript /> uninstall preline*/}
       </body>
     </html>
   );
