@@ -5,8 +5,6 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
 export async function POST(request: Request) {
     const priceId = process.env.YEARLY_PRICE_ID!;
-
-    console.log(priceId);
     try {
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ['card'],
