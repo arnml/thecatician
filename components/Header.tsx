@@ -9,7 +9,7 @@ import { useState } from "react";
 const navigation = [
   { name: 'Una carta para el lector', href: '/about' },
   { name: 'Ejemplos gratis', href: '/ejemplos' },
-  { name: 'Precio', href: '/precio' },
+  { name: 'Precio', href: '/price' },
   { name: 'FAQ', href: '/faq' },
 ];
 const company = "El Explorador";
