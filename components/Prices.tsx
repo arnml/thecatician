@@ -51,9 +51,9 @@ const handleCheckout = async() => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ priceId: 'price_1QaJ1309ZbJneV5axAnIy6pk'}),
     });
   const session = await response.json();
+  console.log(session);
   await stripe?.redirectToCheckout({ sessionId: session.sessionId });
 }
 export default function Prices() {
