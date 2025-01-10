@@ -21,7 +21,7 @@ export default function Header() {
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5 text-black">
               <span className="sr-only">{company}</span>
-              <FaCat className="size-10"/>
+              <FaCat className="size-10 text-indigo-600"/>
               {company}
             </Link>
           </div>
