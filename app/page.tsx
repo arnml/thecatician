@@ -13,8 +13,6 @@ export default function Home() {
       </h1>
       <CatDescription/> 
       <Player/>
-      <Player/>
-      <Player/>
       <div className="flex justify-center space-x-4 fixed inset-x-0 bottom-0 p-4">
         <button className="bg-indigo-600 rounded-lg text-white px-4 py-2 animate-pulse">
         Join the Club
