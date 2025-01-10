@@ -3,14 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #96b8a3;
   --foreground: #ededed;
 }
 
 body {
-  background-image: url('/bg.webp');
-  background-size: cover;
-  background-position: center;
   height: 100vh;
   width: 100%;
   font-family: var(--font-roboto), serif;

@@ -27,7 +27,7 @@ export default function HeroSimple() {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-5xl font-semibold tracking-tight leading-snug	text-balance text-gray-900 sm:text-7xl sm:leading-snug">
+            <h1 className="text-xl font-semibold tracking-tight leading-snug	text-balance text-gray-900 sm:text-4xl sm:leading-snug">
               Entiende papers científicos en 
               <span className="relative m-2">
                 <span className="block absolute -inset-1 -skew-y-3 bg-indigo-600" aria-hidden="true"></span>

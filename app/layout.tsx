@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} antialiased`}>
+      <body className={`${roboto.variable} antialiased bg-gray-300`}>
         <Header />
         {children}
         {/* <PrelineScript /> uninstall preline*/}
