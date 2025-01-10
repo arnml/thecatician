@@ -8,7 +8,7 @@ const roboto = Roboto({
   weight: ["400", "700"]
 });
 export const metadata: Metadata = {
-  title: "El Explorador",
+  title: "The Catician",
   description: "Newsletter y pódcast diario para entender papers en minutos.",
 };
 export default function RootLayout({

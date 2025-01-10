@@ -1,6 +1,6 @@
 'use client'
 import Link from "next/link";
-import Image from "next/image";
+import { FaCat } from "react-icons/fa";
 import logo from "@/public/logo.svg";
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -12,7 +12,7 @@ const navigation = [
   { name: 'Precio', href: '/price' },
   { name: 'FAQ', href: '/faq' },
 ];
-const company = "El Explorador";
+const company = "The Catician";
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     
@@ -22,13 +22,7 @@ export default function Header() {
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5 text-black">
               <span className="sr-only">{company}</span>
-              <Image
-              alt=""
-              src={logo}
-              width={32}
-              height={32}
-              className="h-8 w-auto"
-              />
+              <FaCat className="size-10"/>
               {company}
             </Link>
           </div>
@@ -59,11 +53,7 @@ export default function Header() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <Image
-                  alt=""
-                  src={logo}
-                  className="h-8 w-auto"
-                />
+                <FaCat className="size-10"/>
               </a>
               <button
                 type="button"
