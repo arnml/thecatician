@@ -4,8 +4,7 @@ import CatDescription from "@/components/CatDescription/CatDescription";
 export default function Home() {
   return (
     <>
-      {/* <HeroSimple/> */}
-      <div className="max-w-screen-sm p-2 pt-20 mx-auto space-y-4">        
+      <div className="max-w-screen-sm p-2 pt-28 mx-auto space-y-4">        
         <h1 className="text-3xl font-semibold text-gray-900 text-center py-2">
           Entiende papers científicos en 
           <span className="relative m-2">
@@ -13,8 +12,8 @@ export default function Home() {
             <span className="relative text-white">minutos</span>
           </span>
         </h1>
-        <Player/>
-        <CatDescription/>        
+        <CatDescription/> 
+        <Player/>               
 v      </div>
     </>
   );

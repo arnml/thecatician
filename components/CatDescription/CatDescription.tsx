@@ -12,21 +12,16 @@ export default function CatDescription(){
                         <span className="font-bold text-indigo-600 pl-1">Physics</span>, and
                         <span className="font-bold text-indigo-600 pl-1">Math</span>                    
                     </p>
-                    <p className="text-lg font-medium">
+                    {/* <p className="text-lg font-medium">
                         A blend of artisanal craftsmanship and AI-assisted research.
-                    </p>
+                    </p> */}
                 </blockquote>
-                <figcaption className="font-medium">
-                    <div className="font-bold text-indigo-600">
-                        The team
-                    </div>
-                </figcaption>
-                <button className="bg-sky-500 hover:bg-sky-700 rounded-lg text-white px-4 py-2">
+                {/* <button className="bg-sky-500 hover:bg-sky-700 rounded-lg text-white px-4 py-2">
                 Join the Club
                 </button>
                 <button className="bg-sky-500 hover:bg-sky-700 rounded-lg text-white px-4 py-2">
                 Free Example
-                </button>
+                </button> */}
             </div>
         </figure>
     );
