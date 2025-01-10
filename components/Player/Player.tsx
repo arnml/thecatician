@@ -6,7 +6,7 @@ export default function Player(){
         <div className="flex items-center space-x-4">
             <Image src="/full-stack-radio.png" alt="" width="88" height="88" className="flex-none rounded-lg bg-slate-100" loading="lazy" />
             <div className="min-w-0 flex-auto space-y-1 font-semibold">
-            <p className="text-cyan-500 text-sm leading-6">
+            <p className="text-indigo-600 text-sm leading-6">
                 <abbr title="Episode">Ep.</abbr> 128
             </p>
             <h2 className="text-slate-500 text-sm leading-6 truncate">
@@ -20,14 +20,14 @@ export default function Player(){
         <div className="space-y-2">
             <div className="relative">
             <div className="bg-slate-100 rounded-full overflow-hidden">
-                <div className="bg-cyan-500 w-1/2 h-2" role="progressbar" aria-label="music progress" aria-valuenow={1456} aria-valuemin={0} aria-valuemax={4550}></div>
+                <div className="bg-indigo-600 w-1/2 h-2" role="progressbar" aria-label="music progress" aria-valuenow={1456} aria-valuemin={0} aria-valuemax={4550}></div>
             </div>
             <div className="ring-cyan-500 ring-2 absolute left-1/2 top-1/2 w-4 h-4 -mt-2 -ml-2 flex items-center justify-center bg-white rounded-full shadow">
                 <div className="w-1.5 h-1.5 bg-cyan-500 rounded-full ring-1 ring-inset ring-slate-900/5"></div>
             </div>
             </div>
             <div className="flex justify-between text-sm leading-6 font-medium tabular-nums">
-            <div className="text-cyan-500">24:16</div>
+            <div className="text-indigo-600">24:16</div>
             <div className="text-slate-500">75:50</div>
             </div>
         </div>
