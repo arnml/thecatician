@@ -1,7 +1,6 @@
 'use client'
 import Link from "next/link";
 import { FaCat } from "react-icons/fa";
-import logo from "@/public/logo.svg";
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useState } from "react";
