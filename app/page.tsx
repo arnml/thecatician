@@ -1,5 +1,6 @@
 import Player from "@/components/Player/Player";
 import CatDescription from "@/components/CatDescription/CatDescription";
+import { FaAngleDoubleDown } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -12,7 +13,10 @@ export default function Home() {
         </span>
       </h1>
       <CatDescription/> 
-      <h2 className="">Free Examples</h2>
+      <div className="flex bg-indigo-300 rounded-xl p-6">
+        <h2 className="text-xl font-semibold">Free Examples</h2>
+        <FaAngleDoubleDown className="animate-bounce size-6"/>
+      </div>
       <Player/>
       <Player/>
       <Player/>
