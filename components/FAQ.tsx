@@ -2,10 +2,10 @@
 import { useState } from 'react';
 
 export default function FAQ() {
-  const [activeAccordion, setActiveAccordion] = useState(null);
+  const [activeAccordion, setActiveAccordion] = useState<number>(0);
 
-  const toggleAccordion = (id) => {
-    setActiveAccordion((prevId) => (prevId === id ? null : id));
+  const toggleAccordion = (id: number ) => {
+    setActiveAccordion((prevId) => (prevId === id ? 0 : id));
   };
 
   const faqs = [
