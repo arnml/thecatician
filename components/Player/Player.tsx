@@ -6,7 +6,7 @@ export default function Player(){
         <div className="flex items-center space-x-4">
             <div className="min-w-0 flex-auto space-y-1 font-semibold">
             <p className="text-indigo-600 text-sm leading-6">
-                <abbr title="Episode">Ep.</abbr> 128
+                <abbr title="Episode">Example</abbr>
             </p>
             <h2 className="text-slate-500 text-sm leading-6 truncate">
                 Scaling CSS at Heroku with Utility classNamees
