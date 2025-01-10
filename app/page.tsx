@@ -20,7 +20,7 @@ export default function Home() {
         Join the Club
         </button>
         <button className="bg-orange-500 rounded-lg text-white px-4 py-2">
-        Free Example
+        More Examples
         </button>         
       </div>      
     </div>
