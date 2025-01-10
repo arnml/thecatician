@@ -20,7 +20,7 @@ export default function Home() {
         <button className="bg-indigo-600 rounded-lg text-white px-4 py-2 animate-bounce">
         Join the Club
         </button>
-        <button className="bg-sky-500 rounded-lg text-white px-4 py-2 animate-pulse">
+        <button className="bg-orange-500 rounded-lg text-white px-4 py-2 animate-pulse">
         Free Example
         </button>         
       </div>      
