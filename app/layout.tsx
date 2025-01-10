@@ -18,6 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Newsletter y pódcast diario para entender papers en minutos." />
+        <meta name="keywords" content="newsletter, podcast, papers, research, science" />
+        <meta name="author" content="The Catician" />
+        <title>The Catician</title>
+      </head>
       <body className={`${roboto.variable} antialiased bg-slate-100`}>
         <Header />
         {children}
