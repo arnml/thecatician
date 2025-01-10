@@ -18,10 +18,9 @@ export default function Header() {
     return (
         <header className="absolute inset-x-0 top-0 z-50 text-indigo-900">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
-          <div className="flex lg:flex-1">
+          <div className="flex lg:flex-1 text-xl font-semibold text-black">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">{company}</span>
-              <FaCat className="size-10 text-indigo-600"/>
               {company}
             </Link>
           </div>
@@ -52,7 +51,6 @@ export default function Header() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">{company}</span>
-                <FaCat className="size-10"/>
               </a>
               <button
                 type="button"
