@@ -12,7 +12,13 @@ export default function Home() {
         </span>
       </h1>
       <CatDescription/> 
-      <Player/>               
+      <Player/>
+      <button className="bg-sky-500 hover:bg-sky-700 rounded-lg text-white px-4 py-2">
+      Join the Club
+      </button>
+      <button className="bg-sky-500 hover:bg-sky-700 rounded-lg text-white px-4 py-2">
+      Free Example
+      </button>               
     </div>
   );
 }
