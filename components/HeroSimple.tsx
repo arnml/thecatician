@@ -20,8 +20,8 @@ export default function HeroHeader() {
           your understanding of hard science.
         </p>
         <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-            <button className="bg-black text-white p-4">Join</button>
-            <button className="bg-gray-300 text-black p-4">Examples</button>
+            <button className="bg-black text-white p-4 w-30">Join</button>
+            <button className="bg-gray-300 text-black p-4 w-30">Examples</button>
         </div>
         </div>
         <div>
