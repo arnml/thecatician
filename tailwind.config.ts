@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import relumeTailwindPreset from "@relume_io/relume-tailwind";
+// import relumeTailwindPreset from "@relume_io/relume-tailwind";
 
 export default {
   content: [
@@ -7,7 +7,7 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  presets: [relumeTailwindPreset],
+  // presets: [relumeTailwindPreset],
   theme: {
     extend: {
       colors: {
