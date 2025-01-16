@@ -1,6 +1,6 @@
-import HeroSection from '@/components/HeroSection/Hero';
+import HeroEnglishSection from '@/components/HeroSection/HeroEnglish';
 export default function Home() {
   return (
-    <HeroSection/>
+    <HeroEnglishSection/>
   );
 }
