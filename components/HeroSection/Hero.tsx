@@ -14,9 +14,9 @@ export default function HeroSection() {
     <section
       className="grid grid-cols-1 gap-y-8 pt-16 md:grid-flow-row md:pt-24 lg:grid-flow-col lg:grid-cols-2 lg:items-center lg:pt-0"
     >
-      <div className="mx-5 max-w-[40rem] justify-self-start lg:ml-[5vw] lg:mr-20 lg:justify-self-end">
+      <div className="mx-5 max-w-[40rem] justify-self-start lg:ml-[5vw] lg:mr-20 lg:justify-self-end ">
         <h1 className="mb-5 text-3xl font-bold md:mb-6 md:text-5xl lg:text-6xl">
-          The Catician: Unlocking  
+          The Catician: Read  
           <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-slate-600 relative inline-block mr-2 -z-10">
           <span className="relative text-white">Science Papers</span>
           </span>
