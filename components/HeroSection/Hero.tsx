@@ -15,28 +15,39 @@ export default function HeroSection() {
       className="grid grid-cols-1 gap-y-8 pt-16 md:grid-flow-row md:pt-24 lg:grid-flow-col lg:grid-cols-2 lg:items-center lg:pt-0"
     >
       <div className="mx-5 max-w-[40rem] justify-self-start lg:ml-[5vw] lg:mr-20 lg:justify-self-end ">
-        <h1 className="mb-5 text-3xl font-bold md:mb-6 md:text-5xl lg:text-6xl">
+        <h1 className="hidden md:block mb-5 text-3xl font-bold md:mb-6 md:text-5xl lg:text-6xl">
           The Catician: Read  
           <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-slate-600 relative inline-block mr-2 -z-10">
           <span className="relative text-white">Science Papers</span>
           </span>
           in minutes
         </h1>
-        <h1 className="mb-5 text-xl font-bold md:mb-6 md:text-1xl lg:text-2xl">
+        <h1 className="block md:hidden text-center mb-5 text-3xl font-bold md:mb-6 md:text-5xl lg:text-6xl">
+          The Catician: Read  
+          <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-slate-600 relative inline-block mr-2 -z-10">
+          <span className="relative text-white">Science Papers</span>
+          </span>
+          in minutes
+        </h1>
+
+        <h1 className="hidden md:block mb-5 text-xl font-bold md:mb-6 md:text-1xl lg:text-2xl">
           Newsletter and Podcast
         </h1>
-        <p className="md:text-md">
+        <h1 className="block md:hidden text-center mb-5 text-xl font-bold md:mb-6 md:text-1xl lg:text-2xl">
+          Newsletter and Podcast
+        </h1>
+
+        <p className="hidden md:block md:text-md">
           At The Catician, we bridge the gap between intricate scientific
           research and your understanding. Our newsletter and podcast make hard
-          science accessible and enjoyable for every enthusiast.
-          
+          science accessible and enjoyable for every enthusiast.          
         </p>
-        <p className="md:text-md">
-        <span className="font-bold pr-1">Computer Science,</span>
-        <span className="font-bold pr-1">ML/AI,</span>
-        <span className="font-bold pr-1">Economics,</span>
-        <span className="font-bold pr-1">Systems,</span>
-        <span className="font-bold pr-1">Physics</span>
+        <p className="block md:hidden text-center md:text-md">
+          At The Catician, we bridge the gap between intricate scientific
+          research and your understanding.         
+        </p>
+        <p className="md:text-md text-center md:text-left font-bold ">
+          Computer Science,  ML/AI,  Economics,  Systems,  Physics 
         </p>
         <div className="mt-6 flex gap-4">
             <button className="bg-black text-white p-4 w-40">Join</button>
