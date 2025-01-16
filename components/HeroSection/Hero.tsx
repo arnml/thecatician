@@ -2,6 +2,8 @@
 
 import React from "react";
 import styles from "@/components/HeroSection/Hero.module.css"
+import Image from "next/image";
+import scaling_paper from "@/public/scaling_paper.png";
 export default function HeroSection() {
   return (
     <section
@@ -26,10 +28,10 @@ export default function HeroSection() {
             <div className={`-mt-[40%] grid w-full h-full columns-2 grid-cols-1 gap-4 self-center ${styles['animate-loop-vertically']}`}>
             <div className="grid w-full h-full grid-cols-1 gap-4">
               <div className="relative w-full pt-[120%]">
-                <img
+                <Image
                   className="absolute inset-0 w-full h-full object-cover"
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                  alt="Relume placeholder image 1"
+                  src={scaling_paper}
+                  alt="Scaling Paper"
                 />
               </div>
             </div>
