@@ -70,7 +70,7 @@ export default function HeroSection() {
               <div className="relative w-full pt-[120%]">
                 <Image
                   className="absolute inset-0 w-full h-full object-cover"
-                  src={student}
+                  src={dispersive_waves_paper}
                   alt="Relume placeholder image 5"
                 />
               </div>
@@ -128,7 +128,7 @@ export default function HeroSection() {
               <div className="relative w-full pt-[120%]">
                 <Image
                   className="absolute inset-0 w-full h-full object-cover"
-                  src={student}
+                  src={scaling_paper}
                   alt="Relume placeholder image 5"
                 />
               </div>
