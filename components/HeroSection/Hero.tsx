@@ -8,19 +8,34 @@ import student from "@/public/student.png";
 import anysotropy_paper from "@/public/anisotropy_paper.png";
 import dispersive_waves_paper from "@/public/dispersive_waves_paper.png";
 import fiscal_mechanism from "@/public/fiscal_mechanism.png";
+import oldCat from "@/public/oldCat.png";
 export default function HeroSection() {
   return (
     <section
       className="grid grid-cols-1 gap-y-8 pt-16 md:grid-flow-row md:pt-24 lg:grid-flow-col lg:grid-cols-2 lg:items-center lg:pt-0"
     >
       <div className="mx-5 max-w-[40rem] justify-self-start lg:ml-[5vw] lg:mr-20 lg:justify-self-end">
-        <h1 className="mb-5 text-3xl font-bold md:mb-6 md:text-5xl lg:text-10xl">
-          Unlocking Science: Simplifying Complex Research Papers
+        <h1 className="mb-5 text-3xl font-bold md:mb-6 md:text-5xl lg:text-6xl">
+          Unlocking  
+          <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-slate-600 relative inline-block">
+          <span className="relative text-white">Science Papers</span>
+          </span>
+        </h1>
+        <h1 className="mb-5 text-xl font-bold md:mb-6 md:text-1xl lg:text-2xl">
+          Simplifying Complex Research Papers 
         </h1>
         <p className="md:text-md">
           At The Catician, we bridge the gap between intricate scientific
           research and your understanding. Our newsletter and podcast make hard
           science accessible and enjoyable for every enthusiast.
+          
+        </p>
+        <p className="md:text-md">
+        <span className="font-bold pr-1">Computer Science,</span>
+        <span className="font-bold pr-1">ML/AI,</span>
+        <span className="font-bold pr-1">Economics,</span>
+        <span className="font-bold pr-1">Systems,</span>
+        <span className="font-bold pr-1">Physics</span>
         </p>
         <div className="mt-6 flex gap-4">
             <button className="bg-black text-white p-4 w-40">Join</button>
@@ -52,7 +67,7 @@ export default function HeroSection() {
               <div className="relative w-full pt-[120%]">
                 <Image
                   className="absolute inset-0 w-full h-full object-cover"
-                  src={dispersive_waves_paper}
+                  src={oldCat}
                   alt="Relume placeholder image 3"
                 />
               </div>
