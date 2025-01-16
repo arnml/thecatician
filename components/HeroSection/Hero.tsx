@@ -5,6 +5,9 @@ import styles from "@/components/HeroSection/Hero.module.css"
 import Image from "next/image";
 import scaling_paper from "@/public/scaling_paper.png";
 import student from "@/public/student.png";
+import anysotropy_paper from "@/public/anisotropy_paper.png";
+import dispersive_waves_paper from "@/public/dispersive_waves_paper.png";
+import fiscal_mechanism from "@/public/fiscal_mechanism.png";
 export default function HeroSection() {
   return (
     <section
@@ -40,43 +43,43 @@ export default function HeroSection() {
               <div className="relative w-full pt-[120%]">
                 <Image
                   className="absolute inset-0 w-full h-full object-cover"
-                  src={student}
+                  src={anysotropy_paper}
                   alt="Relume placeholder image 2"
                 />
               </div>
             </div>
             <div className="grid w-full h-full grid-cols-1 gap-4">
               <div className="relative w-full pt-[120%]">
-                <img
+                <Image
                   className="absolute inset-0 w-full h-full object-cover"
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                  src={dispersive_waves_paper}
                   alt="Relume placeholder image 3"
                 />
               </div>
             </div>
             <div className="grid w-full h-full grid-cols-1 gap-4">
               <div className="relative w-full pt-[120%]">
-                <img
+                <Image
                   className="absolute inset-0 w-full h-full object-cover"
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                  src={fiscal_mechanism}
                   alt="Relume placeholder image 4"
                 />
               </div>
             </div>
             <div className="grid w-full h-full grid-cols-1 gap-4">
               <div className="relative w-full pt-[120%]">
-                <img
+                <Image
                   className="absolute inset-0 w-full h-full object-cover"
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                  src={student}
                   alt="Relume placeholder image 5"
                 />
               </div>
             </div>
             <div className="grid w-full h-full grid-cols-1 gap-4">
               <div className="relative w-full pt-[120%]">
-                <img
+                <Image
                   className="absolute inset-0 w-full h-full object-cover"
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                  src={student}
                   alt="Relume placeholder image 6"
                 />
               </div>
@@ -87,54 +90,54 @@ export default function HeroSection() {
 >
             <div className="grid w-full h-full grid-cols-1 gap-4">
               <div className="relative w-full pt-[120%]">
-                <img
+                <Image
                   className="absolute inset-0 w-full h-full object-cover"
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                  src={fiscal_mechanism}
                   alt="Relume placeholder image 1"
                 />
               </div>
             </div>
             <div className="grid w-full h-full grid-cols-1 gap-4">
               <div className="relative w-full pt-[120%]">
-                <img
+                <Image
                   className="absolute inset-0 w-full h-full object-cover"
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                  src={student}
                   alt="Relume placeholder image 2"
                 />
               </div>
             </div>
             <div className="grid w-full h-full grid-cols-1 gap-4">
               <div className="relative w-full pt-[120%]">
-                <img
+                <Image
                   className="absolute inset-0 w-full h-full object-cover"
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                  src={scaling_paper}
                   alt="Relume placeholder image 3"
                 />
               </div>
             </div>
             <div className="grid w-full h-full grid-cols-1 gap-4">
               <div className="relative w-full pt-[120%]">
-                <img
+                <Image
                   className="absolute inset-0 w-full h-full object-cover"
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                  src={dispersive_waves_paper}
                   alt="Relume placeholder image 4"
                 />
               </div>
             </div>
             <div className="grid w-full h-full grid-cols-1 gap-4">
               <div className="relative w-full pt-[120%]">
-                <img
+                <Image
                   className="absolute inset-0 w-full h-full object-cover"
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                  src={student}
                   alt="Relume placeholder image 5"
                 />
               </div>
             </div>
             <div className="grid w-full h-full grid-cols-1 gap-4">
               <div className="relative w-full pt-[120%]">
-                <img
+                <Image
                   className="absolute inset-0 w-full h-full object-cover"
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                  src={anysotropy_paper}
                   alt="Relume placeholder image 6"
                 />
               </div>
