@@ -16,13 +16,14 @@ export default function HeroSection() {
     >
       <div className="mx-5 max-w-[40rem] justify-self-start lg:ml-[5vw] lg:mr-20 lg:justify-self-end">
         <h1 className="mb-5 text-3xl font-bold md:mb-6 md:text-5xl lg:text-6xl">
-          Unlocking  
-          <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-slate-600 relative inline-block">
+          The Catician: Unlocking  
+          <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-slate-600 relative inline-block mr-2 -z-10">
           <span className="relative text-white">Science Papers</span>
           </span>
+          in minutes
         </h1>
         <h1 className="mb-5 text-xl font-bold md:mb-6 md:text-1xl lg:text-2xl">
-          Simplifying Complex Research Papers 
+          Newsletter and Podcast
         </h1>
         <p className="md:text-md">
           At The Catician, we bridge the gap between intricate scientific
