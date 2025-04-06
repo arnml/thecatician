@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 // import styles from "@/components/HeroSection/Hero.module.css"
 // import Image from "next/image";
@@ -49,9 +50,13 @@ export default function HeroEnglish() {
         <p className="md:text-md text-center md:text-left font-bold ">
           Computer Science,  ML/AI,  Economics,  Systems,  Physics 
         </p>
-        <div className="mt-6 flex gap-4">
+        <div className="mt-6 flex gap-4">            
+          <Link href="https://thecatician.substack.com/" target="_blank" rel="noopener noreferrer">
             <button className="bg-black text-white p-4 w-40">Join</button>
+          </Link>
+          <Link href="https://thecatician.substack.com/" target="_blank" rel="noopener noreferrer">
             <button className="bg-gray-300 text-black p-4 w-40">Examples</button>
+          </Link>
         </div>
       </div>
       {/* <div className="h-[30rem] overflow-hidden pl-[5vw] pr-[5vw] md:h-[40rem] lg:h-screen lg:pl-0">
