@@ -50,7 +50,7 @@ export default function HeroEnglishSection() {
           Computer Science,  ML/AI,  Economics,  Systems,  Physics 
         </p>
         <div className="mt-6 flex gap-4">
-            <button className="bg-black text-white p-4 w-40">Join</button>
+            <a href="https://thecatician.substack.com/" className="bg-black text-white p-4 w-40 text-center">Join</a>
             <button className="bg-gray-300 text-black p-4 w-40">Examples</button>
         </div>
       </div>
