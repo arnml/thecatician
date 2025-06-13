@@ -67,7 +67,7 @@ export default function HeroSectionOne() {
             Read the Newsletter
           </a>
           <a
-            href="https://www.youtube.com/@TheCatician"
+            href="https://www.youtube.com"
             target="_blank"
             rel="noopener noreferrer"
             className="w-60 transform rounded-lg border border-gray-300 bg-white px-6 py-2 text-center font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900"
@@ -76,23 +76,31 @@ export default function HeroSectionOne() {
           </a>
         </motion.div>
 
-        {/* Hero Image */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, delay: 1.2 }}
-          className="relative max-w-7xl z-10 mt-20 rounded-3xl border border-neutral-200 bg-neutral-100 p-4 shadow-md dark:border-neutral-800 dark:bg-neutral-900"
-        >
-          <div className="w-full overflow-hidden rounded-xl border border-gray-300 dark:border-gray-700">
-            <img
-              src="/thecatshow.png"
-              alt="Podcast recording setup with microphones and people in a studio"
-              className="aspect-[16/9] h-auto w-full object-cover"
-              height={1000}
-              width={1000}
-            />
+        {/* ========= START: Glow Effect Wrapper ========= */}
+        <div className="relative mt-20">
+          <div className="absolute -inset-2">
+            <div className="w-full h-full max-w-7xl mx-auto rounded-3xl opacity-40 blur-lg bg-gradient-to-r from-blue-500 via-pink-500 to-orange-500"></div>
           </div>
-        </motion.div>
+          {/* ========= END: Glow Effect Wrapper ========= */}
+
+          {/* Hero Image */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: 1.2 }}
+            className="relative max-w-7xl z-10 rounded-3xl border border-neutral-200 bg-neutral-100 p-4 shadow-md dark:border-neutral-800 dark:bg-neutral-900"
+          >
+            <div className="w-full overflow-hidden rounded-xl border border-gray-300 dark:border-gray-700">
+              <img
+                src="/thecatshow.png"
+                alt="Podcast recording setup with microphones and people in a studio"
+                className="aspect-[16/9] h-auto w-full object-cover"
+                height={1000}
+                width={1000}
+              />
+            </div>
+          </motion.div>
+        </div>
       </div>
     </div>
   );
