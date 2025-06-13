@@ -1,6 +1,13 @@
-import HeroEnglishSection from '@/components/HeroSection/HeroEnglish';
+import HeroSectionOne from "@/components/hero-section-demo-1";
+import ModeToggle from "@/components/theme-switch";
+import { Button } from "@/components/ui/button";
+
 export default function Home() {
   return (
-    <HeroEnglishSection/>
+    <>
+    <ModeToggle />
+    <Button>Hi</Button>
+    <HeroSectionOne />
+    </>
   );
 }
