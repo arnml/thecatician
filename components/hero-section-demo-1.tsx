@@ -85,8 +85,8 @@ export default function HeroSectionOne() {
         >
           <div className="w-full overflow-hidden rounded-xl border border-gray-300 dark:border-gray-700">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Curious_kitten.jpg/640px-Curious_kitten.jpg"
-              alt="Curious cat exploring science"
+              src="/thecatshow.png"
+              alt="Podcast recording setup with microphones and people in a studio"
               className="aspect-[16/9] h-auto w-full object-cover"
               height={1000}
               width={1000}
