@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function HeroSectionOne() {
   return (
@@ -58,22 +60,24 @@ export default function HeroSectionOne() {
           transition={{ duration: 0.3, delay: 1 }}
           className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
         >
-          <a
-            href="https://thecatician.substack.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-60 transform rounded-lg bg-black px-6 py-2 text-center font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
-          >
-            Read the Newsletter
-          </a>
-          <a
-            href="https://www.youtube.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-60 transform rounded-lg border border-gray-300 bg-white px-6 py-2 text-center font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900"
-          >
-            Watch on YouTube
-          </a>
+          <Button asChild size="lg" className="w-60 transform transition-all duration-300 hover:-translate-y-0.5">
+            <a
+              href="https://thecatician.substack.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read the Newsletter
+            </a>
+          </Button>
+          <Button variant="outline" size="lg" asChild className="w-60 transform transition-all duration-300 hover:-translate-y-0.5">
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Watch on YouTube
+            </a>
+          </Button>
         </motion.div>
 
         {/* ========= START: Glow Effect Wrapper ========= */}
@@ -90,13 +94,13 @@ export default function HeroSectionOne() {
             transition={{ duration: 0.3, delay: 1.2 }}
             className="relative max-w-7xl z-10 rounded-3xl border border-neutral-200 bg-neutral-100 p-4 shadow-md dark:border-neutral-800 dark:bg-neutral-900"
           >
-            <div className="w-full overflow-hidden rounded-xl border border-gray-300 dark:border-gray-700">
-              <img
+            <div className="w-full aspect-[16/9] overflow-hidden rounded-xl border border-gray-300 dark:border-gray-700 relative">
+              <Image
                 src="/thecatshow.png"
                 alt="Podcast recording setup with microphones and people in a studio"
-                className="aspect-[16/9] h-auto w-full object-cover"
-                height={1000}
-                width={1000}
+                fill
+                priority
+                className="object-cover"
               />
             </div>
           </motion.div>
@@ -113,14 +117,15 @@ const Navbar = () => {
         <div className="size-7 rounded-full bg-gradient-to-br from-purple-500 to-pink-500" />
         <h1 className="text-base font-bold md:text-2xl">The Catician</h1>
       </div>
-      <a
-        href="https://thecatician.substack.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-24 md:w-32 transform rounded-lg bg-black px-6 py-2 text-center font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
-      >
-        Subscribe
-      </a>
+      <Button asChild className="w-24 md:w-32 transform transition-all duration-300 hover:-translate-y-0.5">
+        <a
+          href="https://thecatician.substack.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Subscribe
+        </a>
+      </Button>
     </nav>
   );
 };
