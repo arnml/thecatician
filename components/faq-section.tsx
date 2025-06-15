@@ -38,7 +38,7 @@ const faqData = [
 ];
 
 export function FaqSection() {
-  const [openItem, setOpenItem] = React.useState<string | null>(null);
+  const [openItem, setOpenItem] = React.useState<string | undefined>(undefined);
 
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-background text-foreground">
