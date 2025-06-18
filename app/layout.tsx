@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
+import NewsletterSchema from "@/components/newsletter-schema";
 
 import "./globals.css";
 
@@ -14,59 +15,56 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"; // Fallback for local dev
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"; // Fallback for local dev
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl), // Required for resolving relative image paths
-  title: {
-    default: "Jules' Next.js Showcase",
-    template: "%s | Jules' Showcase", // For page-specific titles
-  },
-  description: "A collection of innovative Next.js projects and experiments by Jules. Explore cutting-edge web development.",
-  keywords: ["Next.js", "React", "TypeScript", "Web Development", "Portfolio", "Projects", "Jules", "Showcase", "aceternity ui"],
-  robots: "index, follow",
-  creator: "Jules",
-  publisher: "Jules",
+  metadataBase: new URL(siteUrl),
+  title: 'The Catician | Science & AI Newsletter with a Feline Twist',
+  description: 'Subscribe to The Catician newsletter for weekly insights on cosmic science, AI research, and nerdy discoveries, delivered with curiosity and clarity.',
+  keywords: 'science newsletter, AI newsletter, tech newsletter, science communication, cat science, technology news, AI research updates',
+  applicationName: 'The Catician Newsletter',
+  authors: [{ name: 'The Catician' }],
+  category: 'Newsletter, Science Communication, Technology',
   openGraph: {
-    title: "Jules' Next.js Showcase",
-    description: "Explore a collection of innovative Next.js projects by Jules.",
+    type: 'website',
+    title: 'The Catician Newsletter',
+    description: 'Your weekly dose of science, AI, and cosmic curiosity',
     url: siteUrl,
-    siteName: "Jules' Showcase",
+    siteName: 'The Catician',
     images: [
       {
-        url: "/thecatshow.png", // Relative to public folder
-        width: 1200, // Optional: Specify image width
-        height: 630, // Optional: Specify image height
-        alt: "Jules' Next.js Showcase Banner",
-      },
+        url: '/thecatshow.png',
+        width: 1200,
+        height: 630,
+        alt: 'The Catician Newsletter'
+      }
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Jules' Next.js Showcase",
-    description: "A collection of innovative Next.js projects by Jules. Explore cutting-edge web development.",
-    // siteId: "YOUR_TWITTER_SITE_ID", // Optional: Your Twitter site ID
-    creator: "@YourTwitterHandle", // Optional: Your Twitter handle
-    // creatorId: "YOUR_TWITTER_CREATOR_ID", // Optional: Your Twitter creator ID
-    images: [{
-        url: "/thecatshow.png", // Relative to public folder
-        alt: "Jules' Next.js Showcase Banner"
-    }],
+    card: 'summary_large_image',
+    title: 'The Catician Newsletter',
+    description: 'Science, AI, and curiosity — with a feline twist',
+    images: ['/thecatshow.png'],
   },
-  // Optional: If you have icons in different sizes or formats
-  icons: {
-    icon: "/favicon.ico", // Default icon
-    // shortcut: "/shortcut-icon.png",
-    // apple: "/apple-icon.png",
-    // other: {
-    //   rel: "apple-touch-icon-precomposed",
-    //   url: "/apple-touch-icon-precomposed.png",
-    // },
+  alternates: {
+    canonical: siteUrl,
   },
-  // Optional: For PWA manifest
-  // manifest: "/site.webmanifest",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  verification: {
+    google: 'your-google-site-verification', // Add your Google verification code
+  },
 };
 
 export default function RootLayout({
@@ -75,10 +73,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable}`}
+      suppressHydrationWarning
+    >
+      <head>
+        <NewsletterSchema />
+      </head>
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
